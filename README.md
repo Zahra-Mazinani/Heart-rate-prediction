@@ -1,9 +1,9 @@
 # Heart-rate-prediction
-# Description:
+## Description:
 The article was about heart rate prediction.
 I got 3 minutes as input in this code and predict 5 minutes as output. We have the heart rate for every 0.5 seconds in the data set. So for getting 3 minutes as input, our input shape will be like this: 60(60 seconds per minute) * 3(minutes) * 2(for 1 second) = 360,  and for output shape(predict 5 minutes), it will be : 60 * 5 * 2 = 600.
 
-* Before starting to work with our data, we have to check if our data is stationary or not.
+Before starting to work with our data, we have to check if our data is stationary or not.
 For this part, I checked it in three ways: 
   1. Histogram plot to check if we have normal distribution data or not.
   2. calculate mean and variance in parts of data to understand whether our mean or variance in our data is alike or not.
@@ -11,7 +11,7 @@ For this part, I checked it in three ways:
 
   If our data wasn't stationary, we had to make it stationary (It was stationary.)
 
-* After that, we have to scale our data between [-1,1] 
+After that, we have to scale our data between [-1,1] 
 * There are some functions that I will describe here:
   *   to_supervised : 
      this function will take our dataset, make windows and predictions, and make an array containing two columns (3 minutes input, 5minutes output).
