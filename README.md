@@ -1,5 +1,6 @@
 # Heart-rate-prediction
 ## Description:
+This project is the implementation of code related to Article x.
 The article was about heart rate prediction.
 I got 3 minutes as input in this code and predict 5 minutes as output. We have the heart rate for every 0.5 seconds in the data set. So for getting 3 minutes as input, our input shape will be like this: 60(60 seconds per minute) * 3(minutes) * 2(for 1 second) = 360,  and for output shape(predict 5 minutes), it will be : 60 * 5 * 2 = 600.
 
